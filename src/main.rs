@@ -93,11 +93,11 @@ fn main() {
 
         // Candidate sticks
         if quiz.doors[candidate_selection] == Prize::Car {
-            stick_wins = stick_wins + 1 ;
+            stick_wins += 1 ;
         }
         // Candidate swaps 
         if quiz.doors[swapped_selection] == Prize::Car {
-            swap_wins = swap_wins + 1 ;
+            swap_wins += 1 ;
         } 
         let stick_msg = format!("Stick has won {} times / {:.2}%, ", stick_wins, percentage(&i, &stick_wins));
         let swap_msg =  format!("Swap has won  {} times / {:.2}%", swap_wins, percentage(&i, &swap_wins));
